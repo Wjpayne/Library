@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>My Library</h1>
+      <button id="newBookBtn" class="primary-btn"> Add Book</button>
+    </header>
+
+    <main class="library-grid" id="library"></main>
+
+    <dialog id="bookDialog">
+      <form id="bookForm">
+        <h2>Add New Book</h2>
+
+        <label>
+          Title
+          <input type="text" id="title" required />
+        </label>
+
+        <label>
+          Author
+          <input type="text" id="author" required />
+        </label>
+
+        <label>
+          Pages
+          <input type="number" id="pages" required />
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" id="read" />
+          Read
+        </label>
+
+        <menu>
+          <button type="button" id = "cancelDialog">Cancel</button>
+          <button type="submit" class="primary-btn">Add Book</button>
+        </menu>
+      </form>
+    </dialog>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
